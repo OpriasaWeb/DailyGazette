@@ -1,0 +1,54 @@
+<!-- Instruction: The Daily Gazette accepts classified ads in several categories. For most ads, the newpaper charges 10 cents per word for the first 50 words and 8 cents per word for every word after that. Design a flowchart and psuedocode for a program that accepts data about an ad: customer name, ad category, and number of words. Display all the input data and the price for the ad. -->
+
+<!-- A. Modify the newspaper ad program to provide a 10 percent discount for ads over 300 words. -->
+
+<!-- B. Modify the newspaper ad program to display the details of the ad only if it is in the Used cars category. -->
+
+<!-- C. Modify the newspaper ad program so the ad rates are the same as in the original program unless the ad is in the Found category, in which case it is free, or in the Business services category, in which case the charge is 20 cents per word. -->
+
+<!-- D. Modify the newspaper ad program to accept the ad data, then to prompt the user for and accept an ad category. Display the data only if the ad is in the specified category. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>Daily Gazette</title>
+</head>
+<body>
+  
+  <div class="container pt-5">
+    <p class="fs-4 mb-4">Daily Gazette</p>
+    <div class="row">
+      <div class="col-12">
+        <label for="customerName" class="form-label">Customer name</label>
+        <input class="form-control mt-2" type="text" id="customerName"  aria-label="default input example">
+        <label for="adCategory" class="form-label">Ad category</label>
+        <input class="form-control mt-2" type="text" id="adCategory" aria-label="default input example">
+        <label for="numberOfWords" class="form-label">Number of words</label>
+        <input class="form-control mt-2" type="text" id="numberOfWords"  aria-label="default input example">
+        <button type="button" id="submit" class="btn btn-primary mt-2">Submit</button>
+
+        <div class="result mt-4">
+          <div id="priceAd">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./dailyGazette.js"></script>
+</body>
+</html>
