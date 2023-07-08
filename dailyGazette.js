@@ -33,7 +33,12 @@ $('#submit').on('click', function(){
   if(numberOfWords <= 50){
     charge = charge + (numberOfWords * tenCents);
   } else if(numberOfWords > 50){
-    charge = charge + (numberOfWords * tenCents);
+    
+    // -------------------------------------------- //
+    // NOTE: Go down to categories logic 
+    // -------------------------------------------- //
+
+    charge = charge + (50 * tenCents);
     charge = charge + ((numberOfWords - 50)  * eightCents);
   }
 
