@@ -6,7 +6,6 @@
 
 // C. Modify the newspaper ad program so the ad rates are the same as in the original program unless the ad is in the Found category, in which case it is free, or in the Business services category, in which case the charge is 20 cents per word.
 
-// D. Modify the newspaper ad program to accept the ad data, then to prompt the user for and accept an ad category. Display the data only if the ad is in the specified category.
 
 // --------- NOTE --------- //
 
@@ -32,6 +31,7 @@
 //   then 10 cents times 50
 // if words greater than to 50
 //   then 8 cents times (words - 50)
+
 
 $('#submit').on('click', function(){
   // console.log("Daily");

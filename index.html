@@ -6,7 +6,6 @@
 
 <!-- C. Modify the newspaper ad program so the ad rates are the same as in the original program unless the ad is in the Found category, in which case it is free, or in the Business services category, in which case the charge is 20 cents per word. -->
 
-<!-- D. Modify the newspaper ad program to accept the ad data, then to prompt the user for and accept an ad category. Display the data only if the ad is in the specified category. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +19,7 @@
 
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  
   <title>Daily Gazette</title>
 </head>
 <body>
@@ -31,8 +30,10 @@
       <div class="col-12">
         <label for="customerName" class="form-label">Customer name</label>
         <input class="form-control mt-2" type="text" id="customerName"  aria-label="default input example">
+
         <label for="adCategory" class="form-label">Ad category</label>
         <input class="form-control mt-2" type="text" id="adCategory" aria-label="default input example">
+
         <label for="numberOfWords" class="form-label">Number of words</label>
         <input class="form-control mt-2" type="text" id="numberOfWords"  aria-label="default input example">
         <button type="button" id="submit" class="btn btn-primary mt-2">Submit</button>
@@ -48,7 +49,7 @@
   </div>
 
 
-
   <script src="./dailyGazette.js"></script>
+  
 </body>
 </html>
